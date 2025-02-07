@@ -6,7 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 import babel from '@rollup/plugin-babel';
 
 export default {
-  input: 'src/Counter.js', // 输入文件
+  input: 'src/index.export.js', // 输入文件
   output: [
     {
       file: 'dist/index.js', // 输出 CommonJS 格式的文件
