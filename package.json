@@ -1,0 +1,57 @@
+{
+  "name": "qingyi-counter-component",
+  "version": "0.1.8",
+  "private": false,
+  "main": "dist/index.js", 
+  "dependencies": {
+    "cra-template": "1.2.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "keywords": [
+    "zhuqingyi"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build:rollup": "rollup -c",
+    "build:react": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "prepublishOnly": "npm run build:rollup"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "rollup": "^2.79.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2"
+  }
+}
